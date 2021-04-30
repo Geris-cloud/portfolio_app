@@ -1,0 +1,109 @@
+@use 'basic'as b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: b.$mn-clr;
+}
+
+@media (max-width: 2000px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1800px) {
+  html {
+    font-size: 12px
+  }
+}
+
+@media (max-width: 1700px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 9.5px;
+  }
+}
+
+@media (max-width: 1430px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media (max-width: 1230px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1150px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 830px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 367px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 830px) and (orientation: landscape) {
+  html {
+    font-size: 9px;
+  }
+}

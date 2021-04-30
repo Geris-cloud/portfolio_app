@@ -1,0 +1,195 @@
+@use "basic"as b;
+
+.myname {
+  width: 65%;
+  padding-left: 10%;
+  padding-top: 15vh;
+  min-height: 100vh;
+  text-align: center;
+
+  h1 {
+    padding: 3rem;
+    font-size: 4rem;
+  }
+
+  p {
+    padding: 2rem;
+    font-size: 2rem;
+
+    i {
+      font-size: 5rem;
+      margin: 0 2rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .myname {
+    width: 100%;
+    min-height: 95vh;
+    padding-right: 10%;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 830px) {
+  .myname {
+    width: 100%;
+    padding-right: 10%;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .myname {
+    padding-right: 5%;
+    padding-left: 5%;
+
+    p {
+      i {
+        margin: 0 4rem;
+      }
+
+      i:nth-of-type(1),
+      i:nth-of-type(2) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+// PHOTO 
+
+div.photo {
+  position: fixed;
+  right: 5%;
+  top: 25vh;
+  height: 60vh;
+  width: 20%;
+  border: b.$border-two;
+
+  background: {
+    color: rgba(0, 0, 0, 0.4);
+    size: cover;
+    position: center;
+    blend-mode: color;
+    repeat: no-repeat;
+  }
+}
+
+p.photo {
+  position: fixed;
+  right: 5%;
+  top: 74vh;
+  width: 20%;
+  z-index: 1;
+
+  span {
+    display: block;
+    cursor: pointer;
+    padding: 1.5rem;
+    width: 50%;
+    margin-left: 25%;
+    border-bottom: b.$border-three;
+    border-top: b.$border-three;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  span:hover {
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    transform: translate(0, -8%);
+    transition: linear 0.2s;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  div.photo {
+    position: static;
+    height: 40vh;
+    width: 50%;
+    margin: 0 25%;
+  }
+
+  p.photo {
+    position: static;
+    width: 50%;
+    margin: 2vh 25% 0 25%;
+
+    span {
+      width: 80%;
+      margin-left: 10%;
+      border: b.$border-two;
+      border-radius: 0;
+      transition: none;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    span:hover {
+      border-bottom-width: 0.2rem;
+      border-top-width: 0.2rem;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  div.photo {
+    position: static;
+    height: 40vh;
+    width: 50%;
+    margin: 0 25%;
+  }
+
+  p.photo {
+    position: static;
+    width: 50%;
+    margin: 2vh 25% 0;
+
+    span {
+      width: 80%;
+      margin-left: 10%;
+      border: b.$border-two;
+      border-radius: 0;
+      transition: none;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    span:hover {
+      border-bottom-width: 0.2rem;
+      border-top-width: 0.2rem;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  div.photo {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  p.photo {
+    width: 60%;
+    margin: 2vh 20% 0 20%;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 830px) and (orientation: landscape) {
+  div.photo {
+    height: 80vh;
+    width: 45%;
+    margin: 2vh 27.5%;
+  }
+
+  p.photo span {
+    width: 70%;
+    margin-left: 15%;
+  }
+}

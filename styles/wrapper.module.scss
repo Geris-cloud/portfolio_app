@@ -1,0 +1,61 @@
+@use 'basic'as b;
+
+.wrap {
+  min-height: 100vh;
+  margin-left: 12%;
+
+  background: {
+    color: b.$bgc;
+    image: url(../public/images/matrix-2354492_1280.jpg);
+    blend-mode: color;
+    size: 100%;
+    repeat: repeat;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .wrap {
+    margin-left: 20%;
+    padding-top: 4vh;
+  }
+}
+
+@media (max-width: 830px) {
+  .wrap {
+    margin-left: 0;
+    padding-top: 4vh;
+    transition: 0.2s linear;
+
+    footer {
+      height: 4vh;
+    }
+  }
+
+  div.wrap.pull {
+    margin-top: 40vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrap {
+    padding-top: 8vh;
+  }
+
+  div.wrap.pull {
+    margin-top: 50vh;
+  }
+}
+
+
+@media (max-width: 367px) {
+  div.wrap.pull {
+    margin-top: 56vh;
+  }
+}
+
+
+@media (max-width: 830px) and (orientation: landscape) {
+  div.wrap.pull {
+    margin-top: 60vh;
+  }
+}
