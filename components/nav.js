@@ -23,18 +23,18 @@ export default function WrapNav({ children, langFlag }) {
       <nav className={styles.pc}>
         <ul>
           <li><Link href="/"><a>{langFlag ? 'strona główna' : 'main page'}</a></Link></li>
-          <li><Link href="/"><a>{langFlag ? 'technologie' : 'technology'}</a></Link></li>
-          <li><Link href="/"><a>portfolio</a></Link></li>
-          <li><Link href="/"><a>{langFlag ? 'kontakt' : 'contact'}</a></Link></li>
+          <li><Link href="/subpage/technology"><a>{langFlag ? 'technologie' : 'technology'}</a></Link></li>
+          <li><Link href="/subpage/portfolio"><a>portfolio</a></Link></li>
+          <li><Link href="/subpage/contact"><a>{langFlag ? 'kontakt' : 'contact'}</a></Link></li>
         </ul>
       </nav>
       <nav className={styles.hamburger}>
         <div className={classChange()}>
           <ul>
             <li><Link href="/"><a onClick={hamburgerPull}>{langFlag ? 'strona główna' : 'main page'}</a></Link></li>
-            <li><Link href="/"><a onClick={hamburgerPull}>{langFlag ? 'technologie' : 'technology'}</a></Link></li>
-            <li><Link href="/"><a onClick={hamburgerPull}>portfolio</a></Link></li>
-            <li><Link href="/"><a onClick={hamburgerPull}>{langFlag ? 'kontakt' : 'contact'}</a></Link></li>
+            <li><Link href="/subpage/technology"><a onClick={hamburgerPull}>{langFlag ? 'technologie' : 'technology'}</a></Link></li>
+            <li><Link href="/subpage/portfolio"><a onClick={hamburgerPull}>portfolio</a></Link></li>
+            <li><Link href="/contact"><a onClick={hamburgerPull}>{langFlag ? 'kontakt' : 'contact'}</a></Link></li>
           </ul>
         </div>
         <i className="fas fa-bars" onClick={hamburgerPull}></i>
