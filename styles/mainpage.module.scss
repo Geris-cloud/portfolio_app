@@ -96,13 +96,13 @@ p.photo {
     border-radius: 50%;
     font-size: 1.7rem;
     background-color: rgba(0, 0, 0, 0.3);
+    transition: linear 0.2s;
   }
 
   span:hover {
     border-bottom-width: 2px;
     border-top-width: 2px;
     transform: translate(0, -8%);
-    transition: linear 0.2s;
   }
 }
 
@@ -126,12 +126,6 @@ p.photo {
       border-radius: 0;
       transition: none;
       background-color: rgba(0, 0, 0, 0);
-    }
-
-    span:hover {
-      border-bottom-width: 0.2rem;
-      border-top-width: 0.2rem;
-      transform: translate(0, 0);
     }
   }
 }
@@ -158,11 +152,11 @@ p.photo {
       background-color: rgba(0, 0, 0, 0);
     }
 
-    span:hover {
-      border-bottom-width: 0.2rem;
-      border-top-width: 0.2rem;
-      transform: translate(0, 0);
-    }
+    // span:hover {
+    //   border-bottom-width: 0.2rem;
+    //   border-top-width: 0.2rem;
+    //   transform: translate(0, 0);
+    // }
   }
 }
 

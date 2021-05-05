@@ -34,7 +34,7 @@ export default function WrapNav({ children, langFlag }) {
             <li><Link href="/"><a onClick={hamburgerPull}>{langFlag ? 'strona główna' : 'main page'}</a></Link></li>
             <li><Link href="/subpage/technology"><a onClick={hamburgerPull}>{langFlag ? 'technologie' : 'technology'}</a></Link></li>
             <li><Link href="/subpage/portfolio"><a onClick={hamburgerPull}>portfolio</a></Link></li>
-            <li><Link href="/contact"><a onClick={hamburgerPull}>{langFlag ? 'kontakt' : 'contact'}</a></Link></li>
+            <li><Link href="/subpage/contact"><a onClick={hamburgerPull}>{langFlag ? 'kontakt' : 'contact'}</a></Link></li>
           </ul>
         </div>
         <i className="fas fa-bars" onClick={hamburgerPull}></i>

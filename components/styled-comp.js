@@ -22,18 +22,3 @@ export const Main = styled.div`
   opacity: ${props => props.visible ? '1' : '0'};
   transition: opacity linear 1s 1s;
 `;
-
-export const Btn = styled.button`
-  transition: 0.2s linear;
-  :hover {
-    color: #000;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-`;
-
-export const Div = styled.div`
-  transition: .2s linear;
-  :hover {
-    transform: scale(1.5);
-  }
-`;
