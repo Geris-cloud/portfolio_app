@@ -12,7 +12,7 @@ export default function Home() {
     backgroundImage: 'url(/images/myphoto1.jpg)'
   },
     'photo');
-  console.log(photo)
+
   const [animations, setAnimations] = useState()
 
   const changeLangEn = () => {
