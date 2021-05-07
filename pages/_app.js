@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
   const [language, setLanguage] = useLocalStor(true, 'langFlag');
-  const [animations, setAnimations] = useState()
+  const [animations, setAnimations] = useState(false)
 
   const changeLangEn = () => {
     setLanguage(false, 'langFlag')
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <State visible={animations}>
+    <State visible={animations} className={styles.state} >
       <div className={styles.lang}>
         <p><Span one langFlag={language} onClick={changeLangEn}>en</Span> / <Span two langFlag={language} onClick={changeLangPl}>pl</Span></p>
       </div>
