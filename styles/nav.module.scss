@@ -53,6 +53,20 @@ nav.pc {
       }
     }
   }
+
+  div {
+    margin: 0 auto;
+    width: 50%;
+    height: 20vh;
+    animation: rotate 15s linear infinite;
+
+    background: {
+      image: url(../public/images/react.png);
+      size: contain;
+      position: center;
+      repeat: no-repeat;
+    }
+  }
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {

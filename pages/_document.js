@@ -3,10 +3,6 @@ import { ServerStyleSheet } from 'styled-components';
 
 
 class MyDocument extends Document {
-  // static async getInitialProps(ctx) {
-  //   const initialProps = await Document.getInitialProps(ctx)
-  //   return { ...initialProps }
-  // }
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
     const page = renderPage(App => props => sheet.collectStyles(<App {...props} />))

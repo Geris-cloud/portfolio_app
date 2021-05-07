@@ -3,14 +3,7 @@
 .wrap {
   min-height: 100vh;
   margin-left: 12%;
-
-  background: {
-    color: b.$bgc;
-    image: url(../public/images/matrix-2354492_1280.jpg);
-    blend-mode: color;
-    size: 100%;
-    repeat: repeat;
-  }
+  background-image: linear-gradient(to bottom, #000, #111, #222);
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
@@ -38,7 +31,7 @@
 
 @media (max-width: 540px) {
   .wrap {
-    padding-top: 8vh;
+    padding-top: 10vh;
   }
 
   div.wrap.pull {

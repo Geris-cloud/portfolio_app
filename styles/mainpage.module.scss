@@ -7,9 +7,31 @@
   min-height: 100vh;
   text-align: center;
 
-  h1 {
-    padding: 3rem;
-    font-size: 4rem;
+  div {
+    width: 50%;
+    margin: 3rem auto;
+    border: b.$border-two;
+    background-color: #111;
+
+    h1 {
+      position: relative;
+      padding: 1rem 0;
+      font-size: 3rem;
+      margin: 0 auto;
+      width: fit-content;
+      font-family: Consolas, monospace;
+
+      &::after {
+        text-align: left;
+        content: "|";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        background-color: #111;
+        animation: typing 2.5s 1.2s steps(15) forwards,
+          caret 1s infinite;
+      }
+    }
   }
 
   p {
@@ -37,6 +59,10 @@
     width: 100%;
     padding-right: 10%;
     padding-top: 0;
+
+    div {
+      width: 70%;
+    }
   }
 }
 
@@ -44,6 +70,10 @@
   .myname {
     padding-right: 5%;
     padding-left: 5%;
+
+    div {
+      width: 80%;
+    }
 
     p {
       i {
@@ -63,7 +93,7 @@
 div.photo {
   position: fixed;
   right: 5%;
-  top: 25vh;
+  top: 21vh;
   height: 60vh;
   width: 20%;
   border: b.$border-two;

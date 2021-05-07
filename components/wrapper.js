@@ -1,17 +1,17 @@
 import styles from '../styles/wrapper.module.scss'
 
+export function classChange(state, data) {
+  if (state) {
+    return data
+  } else {
+    return ''
+  }
+}
+
 export default function Wrapper({ children, data }) {
 
-  const wrapClassChange = () => {
-    if (data) {
-      return styles.pull
-    } else {
-      return ''
-    }
-  }
-
   return (
-    <div className={`${styles.wrap} ${wrapClassChange()}`}>
+    <div className={`${styles.wrap} ${classChange(data, styles.pull)}`}>
       {children}
       <footer></footer>
     </div>
