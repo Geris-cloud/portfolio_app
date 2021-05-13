@@ -27,3 +27,18 @@ animation: show 1s linear;
   100% { opacity: 1}
 }
 `;
+
+export const Div = styled.div`
+animation: rotate 15s linear infinite;
+animation-play-state: ${props => props.active ? 'running' : 'paused'};
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+`;

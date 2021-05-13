@@ -15,17 +15,15 @@ $border-three: #555 0 solid;
 }
 
 @keyframes caret {
-  50% {
-    color: transparent
-  }
-}
-
-@keyframes rotate {
   0% {
-    transform: rotate(0deg)
+    color: transparent;
+  }
+
+  50% {
+    color: #fff;
   }
 
   100% {
-    transform: rotate(360deg);
+    color: transparent;
   }
 }

@@ -5,7 +5,7 @@ import styles from '../styles/mainpage.module.scss';
 
 export default function Home({ langFlag }) {
   const [photo, setPhoto] = useLocalStor({
-    backgroundImage: 'url(/images/myphoto1.jpg)'
+    backgroundImage: 'url(/images/myphoto1.jpg)',
   }, 'photo');
 
   const changePhoto = () => {

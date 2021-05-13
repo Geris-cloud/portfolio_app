@@ -1,6 +1,5 @@
 import '../styles/global.scss'
 import WrapNav from '../components/nav';
-import Canvas from '../components/canvas'
 import useLocalStor from '../components/local-storage';
 import { Span, State } from '../components/styled-comp';
 import styles from '../styles/language.module.scss';
