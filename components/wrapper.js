@@ -1,8 +1,8 @@
 import styles from '../styles/wrapper.module.scss'
 
-export function classChange(state, data) {
+export function classChange(state, className) {
   if (state) {
-    return data
+    return className
   } else {
     return ''
   }
