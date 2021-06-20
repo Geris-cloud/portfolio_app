@@ -1,6 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Screenshots
+![Main page](/public/images/portfolio.png?raw=true "Main page")
 
-## Getting Started
+![Contact page](/public/images/portfolio2.png?raw=true "Contact page")
+
+# References
+https://nodejs.org/en/  
+https://nextjs.org/  
+https://reactjs.org/  
+https://sass-lang.com/  
+https://styled-components.com/  
+
+https://fonts.google.com/  
+https://fontawesome.com/  
+https://pixabay.com/pl/  
+
+# Getting Started with Create Next App
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
