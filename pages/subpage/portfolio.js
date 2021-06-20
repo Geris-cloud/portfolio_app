@@ -1,10 +1,8 @@
 import Head from 'next/head';
-import useLocalStor from '../../components/local-storage';
 import { Main } from '../../components/styled-comp';
 import styles from '../../styles/portfolio.module.scss';
-import React, { useState, useEffect } from 'react';
 
-export default function Home({ langFlag }) {
+export default function Portfolio({ langFlag }) {
 
   return (
     <>
@@ -21,7 +19,7 @@ export default function Home({ langFlag }) {
             <div className={styles.text}>
               <p>Portfolio</p>
               <p></p>
-              <a href="#">demo</a><a href="#">{langFlag ? 'kod' : 'code'}</a>
+              <a href="https://github.com/Geris-cloud/Portfolio-App">{langFlag ? 'kod' : 'code'}</a>
             </div>
           </div>
           <div>
@@ -29,8 +27,8 @@ export default function Home({ langFlag }) {
             <div className={styles.text}>
               <p>{langFlag ? 'Aplikacja pogodowa' : 'Weather app'}</p>
               <p></p>
-              <a href="https://geris-cloud.github.io/Workshop-home-page/">demo</a><a
-                href="https://github.com/Geris-cloud/Workshop-home-page">{langFlag ? 'kod' : 'code'}</a>
+              <a href="https://github.com/Geris-cloud/Weather-App">{langFlag ? 'kod' : 'code'}</a>
+              <a href="https://geris-cloud.github.io/Weather-App/">demo</a>
             </div>
           </div>
           <div>
@@ -38,7 +36,8 @@ export default function Home({ langFlag }) {
             <div className={styles.text}>
               <p>{langFlag ? 'Mój pierwszy projekt' : 'My first project'}</p>
               <p>HTML, CSS, JavaScript</p>
-              <a href="#">demo</a><a href="#">{langFlag ? 'kod' : 'code'}</a>
+              <a href="https://github.com/Geris-cloud/Workshop-home-page">{langFlag ? 'kod' : 'code'}</a>
+              <a href="https://geris-cloud.github.io/Workshop-home-page/">demo</a>
             </div>
           </div>
           <div>
@@ -46,7 +45,8 @@ export default function Home({ langFlag }) {
             <div className={styles.text}>
               <p>{langFlag ? 'Do dodania' : 'To be added'}</p>
               <p></p>
-              <a href="#">demo</a><a href="#">{langFlag ? 'kod' : 'code'}</a>
+              {/* <a href="#">{langFlag ? 'kod' : 'code'}</a>
+              <a href="#">demo</a> */}
             </div>
           </div>
         </div>

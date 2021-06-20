@@ -23,6 +23,11 @@ a.github {
   left: 15%;
   font-size: 5rem;
   color: b.$mn-clr;
+  transition: 0.2s linear;
+
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 div.portfolio {
@@ -78,6 +83,11 @@ div.portfolio {
         font-size: 2rem;
         background-color: #5E6CC0;
         color: b.$mn-clr;
+        transition: 0.2s linear;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
 
       a:nth-of-type(2) {
@@ -86,93 +96,85 @@ div.portfolio {
     }
 
     div.one {
-      background-image: url(../public/images/toadd.png);
+      background-image: url(../public/images/portfolio.png);
     }
 
     div.two {
-      background-image: url(../public/images/toadd.png);
+      background-image: url(../public/images/warsaw.png);
     }
 
     div.three {
-      background-image: url(../public/images/toadd.png);
+      background-image: url(../public/images/workshop.png);
     }
 
     div.four {
-      background-image: url(../public/images/toadd.png);
+      // background-image: url(../public/images/xxxxx.png);
+      background-color: #111;
     }
   }
+}
 
-
-
-
-
-
-  @media (max-width: 1440px) and (orientation: landscape) {
-    div.wrap {
-      position: relative;
-      min-height: 225vh;
-    }
-
-    div.portfolio>div {
-      height: 45vh;
-    }
+@media (max-width: 1440px) and (orientation: landscape) {
+  div.wrap {
+    position: relative;
+    min-height: 225vh;
   }
 
-  @media (max-width: 1024px) and (orientation: portrait) {
-    body div.lang {
-      position: absolute;
-    }
+  div.portfolio>div {
+    height: 45vh;
+  }
+}
 
-    div.wrap {
-      min-height: 132vh;
-    }
+@media (max-width: 1024px) and (orientation: portrait) {
+  div.wrap {
+    min-height: 132vh;
+  }
 
-    p.description {
-      left: 30%;
-      width: 40%;
-      padding: 1rem;
-    }
+  p.description {
+    left: 30%;
+    width: 40%;
+    padding: 1rem;
+  }
 
-    a.github {
-      font-size: 7rem;
-    }
+  a.github {
+    font-size: 7rem;
+  }
 
-    div.portfolio {
-      top: 14vh;
-      left: 10%;
-      width: 80%;
-    }
+  div.portfolio {
+    top: 14vh;
+    left: 10%;
+    width: 80%;
 
-    div.portfolio>div {
+    &>div {
       height: 23vh;
     }
   }
+}
 
-  @media (max-width: 830px) {
-    div.wrap {
-      min-height: 280vh;
-    }
+@media (max-width: 830px) {
+  div.wrap {
+    min-height: 280vh;
+  }
 
-    p.description {
-      left: auto;
-      top: 10vh;
-      right: 40%;
-      width: 50%;
-    }
+  p.description {
+    left: auto;
+    top: 10vh;
+    right: 40%;
+    width: 50%;
+  }
 
-    a.github {
-      top: 8vh;
-      left: auto;
-      right: 20%;
-    }
+  a.github {
+    top: 8vh;
+    left: auto;
+    right: 20%;
+  }
 
-    div.portfolio {
-      top: 15vh;
-      left: 10%;
-      width: 80%;
-    }
+  div.portfolio {
+    top: 15vh;
+    left: 10%;
+    width: 80%;
 
-    div.portfolio>div {
+    &>div {
       flex-direction: column;
       height: 60vh;
 
@@ -192,81 +194,81 @@ div.portfolio {
       }
     }
   }
+}
 
-  @media (max-width: 540px) {
-    div.wrap {
-      min-height: 364vh;
-    }
+@media (max-width: 540px) {
+  div.wrap {
+    min-height: 364vh;
+  }
 
-    p.description {
-      left: auto;
-      top: 13vh;
-      right: 30%;
-      width: 60%;
-    }
+  p.description {
+    left: auto;
+    top: 13vh;
+    right: 30%;
+    width: 60%;
+  }
 
-    a.github {
-      top: 11vh;
-      right: 10%;
-      font-size: 6rem;
-    }
+  a.github {
+    top: 11vh;
+    right: 10%;
+    font-size: 6rem;
+  }
 
-    div.portfolio {
-      top: 19vh;
-    }
+  div.portfolio {
+    top: 19vh;
 
-    div.portfolio>div {
+    &>div {
       min-height: 80vh;
     }
   }
+}
 
-  @media (max-width: 420px) {
-    div.wrap {
-      min-height: 324vh;
-    }
-
-    div.portfolio>div {
-      min-height: 70vh;
-    }
+@media (max-width: 420px) {
+  div.wrap {
+    min-height: 324vh;
   }
 
-  @media (max-width: 380px) {
-    p.description {
-      font-size: 2.3rem;
-    }
+  div.portfolio>div {
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 380px) {
+  p.description {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 290px) {
+  div.wrap {
+    min-height: 285vh;
   }
 
-  @media (max-width: 290px) {
-    div.wrap {
-      min-height: 285vh;
-    }
+  div.portfolio>div {
+    min-height: 60vh;
+  }
+}
 
-    div.portfolio>div {
-      min-height: 60vh;
-    }
+@media (max-width: 830px) and (orientation: landscape) {
+  div.wrap {
+    min-height: 605vh;
   }
 
-  @media (max-width: 830px) and (orientation: landscape) {
-    div.wrap {
-      min-height: 605vh;
-    }
+  p.description {
+    top: 15vh;
+  }
 
-    p.description {
-      top: 15vh;
-    }
+  a.github {
+    top: 13vh;
+    font-size: 6rem;
+  }
 
-    a.github {
-      top: 13vh;
-      font-size: 6rem;
-    }
+  div.portfolio {
+    top: 35vh;
+    left: 5%;
+    width: 90%;
 
-    div.portfolio {
-      top: 35vh;
-      left: 5%;
-      width: 90%;
-    }
-
-    div.portfolio>div {
+    &>div {
       min-height: 135vh;
 
       div.photo {
@@ -274,18 +276,18 @@ div.portfolio {
       }
     }
   }
+}
 
-  @media (max-width: 654px) and (orientation: landscape) {
-    div.wrap {
-      min-height: 728vh;
-    }
+@media (max-width: 654px) and (orientation: landscape) {
+  div.wrap {
+    min-height: 728vh;
+  }
 
-    div.portfolio>div {
-      min-height: 165vh;
+  div.portfolio>div {
+    min-height: 165vh;
 
-      div.photo {
-        min-height: 70vh;
-      }
+    div.photo {
+      min-height: 70vh;
     }
   }
 }

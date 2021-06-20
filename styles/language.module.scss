@@ -20,6 +20,12 @@ div.lang {
   }
 }
 
+@media (max-width: 1024px) and (orientation: portrait) {
+  body div.lang {
+    position: absolute;
+  }
+}
+
 @media (max-width: 830px) {
   div.lang {
     position: absolute;
