@@ -4,6 +4,7 @@
   min-height: 100vh;
   margin-left: 12%;
   background-image: linear-gradient(to bottom, #000, #111, #222);
+  background-attachment: fixed;
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {

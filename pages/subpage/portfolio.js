@@ -18,7 +18,7 @@ export default function Portfolio({ langFlag }) {
             <div className={`${styles.photo} ${styles.one}`}></div>
             <div className={styles.text}>
               <p>Portfolio</p>
-              <p></p>
+              <p>Node, Next, React, SCSS Modules, Styled components</p>
               <a href="https://github.com/Geris-cloud/Portfolio-App">{langFlag ? 'kod' : 'code'}</a>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function Portfolio({ langFlag }) {
             <div className={`${styles.photo} ${styles.two}`}></div>
             <div className={styles.text}>
               <p>{langFlag ? 'Aplikacja pogodowa' : 'Weather app'}</p>
-              <p></p>
+              <p>Node, React, Styled components, GSAP</p>
               <a href="https://github.com/Geris-cloud/Weather-App">{langFlag ? 'kod' : 'code'}</a>
               <a href="https://geris-cloud.github.io/Weather-App/">demo</a>
             </div>
@@ -35,7 +35,7 @@ export default function Portfolio({ langFlag }) {
             <div className={`${styles.photo} ${styles.three}`}></div>
             <div className={styles.text}>
               <p>{langFlag ? 'Mój pierwszy projekt' : 'My first project'}</p>
-              <p>HTML, CSS, JavaScript</p>
+              <p>CSS, JavaScript</p>
               <a href="https://github.com/Geris-cloud/Workshop-home-page">{langFlag ? 'kod' : 'code'}</a>
               <a href="https://geris-cloud.github.io/Workshop-home-page/">demo</a>
             </div>
