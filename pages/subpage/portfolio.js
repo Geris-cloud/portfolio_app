@@ -35,7 +35,7 @@ export default function Portfolio({ langFlag }) {
             <div className={`${styles.photo} ${styles.three}`}></div>
             <div className={styles.text}>
               <p>{langFlag ? 'Mój pierwszy projekt' : 'My first project'}</p>
-              <p>CSS, JavaScript</p>
+              <p>CSS, JavaScript hamburger</p>
               <a href="https://github.com/Geris-cloud/Workshop-home-page">{langFlag ? 'kod' : 'code'}</a>
               <a href="https://geris-cloud.github.io/Workshop-home-page/">demo</a>
             </div>
