@@ -14,6 +14,7 @@ p.instruction {
   font-size: 2rem;
   text-align: center;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 main.bilboard {
@@ -48,11 +49,9 @@ main.bilboard {
     background: {
       position: center;
       repeat: no-repeat;
-      size: contain;
     }
 
     p {
-      display: none;
       position: absolute;
       left: 0;
       right: 0;
@@ -62,7 +61,6 @@ main.bilboard {
     }
 
     div {
-      display: none;
       flex-basis: 1.8rem;
       height: 1.8rem;
       flex-grow: 0;

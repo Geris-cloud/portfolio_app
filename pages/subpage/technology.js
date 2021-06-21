@@ -1,11 +1,18 @@
 import Head from 'next/head';
 import useLocalStor from '../../components/local-storage';
-import { Main } from '../../components/styled-comp';
+import { Main, Descr, Point, Name, Bgc } from '../../components/styled-comp';
 import styles from '../../styles/technology.module.scss';
-import React, { useState, useEffect } from 'react';
 
 export default function Technologies({ langFlag }) {
-  const [flag, setFlag] = useLocalStor()
+  const [techFlag, setTechFlag] = useLocalStor(true, 'techFlag')
+
+  let points = ['1', '2', '3', '4', '5']
+  let pointList = points.map(() => {
+    return (
+      <Point tech={techFlag}></Point>
+    )
+  })
+
   return (
     <>
       <Head>
@@ -13,99 +20,61 @@ export default function Technologies({ langFlag }) {
         <link rel="icon" href="/tasks-solid.svg" />
       </Head>
       <Main className={styles.background}>
-        {/* <div className={background}> */}
-        <p className={styles.instruction}>{langFlag ? 'pokaż stopień zaawansowania' : 'show the degree of advancement'}</p>
+        <Descr
+          onClick={() => setTechFlag(!techFlag, 'techFlag')}
+          tech={techFlag}
+          className={styles.instruction}>
+          {langFlag ?
+            techFlag ? 'pokaż stopień zaawansowania' : 'ukryj stopień zaawansowania'
+            :
+            techFlag ? 'show the degree of advancement' : 'hide the degree of advancement'}
+        </Descr>
         <main className={styles.bilboard}>
-          <div id={styles.html} className={styles.icon}>
-            <p>HTML</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div id={styles.css} className={styles.icon}>
-            <p>CSS</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div id={styles.js} className={styles.icon}>
-            <p>JavaScript</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${styles.bootstrap} ${styles.icon}`}>
-            <p>Bootstrap</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${styles.scss} ${styles.icon}`}>
-            <p>Sass</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${styles.jquery} ${styles.icon}`}>
-            <p>jQuery</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${styles.github} ${styles.icon}`}>
-            <p>GitHub</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${styles.node} ${styles.icon}`}>
-            <p>Node</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${styles.express} ${styles.icon}`}>
-            <p>Express</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${styles.mongodb} ${styles.icon}`}>
-            <p>MongoDB</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={`${styles.react} ${styles.icon}`}>
-            <p>React</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <Bgc tech={techFlag} id={styles.html} className={styles.icon}>
+            <Name tech={techFlag}>HTML</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} id={styles.css} className={styles.icon}>
+            <Name tech={techFlag}>CSS</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} id={styles.js} className={styles.icon}>
+            <Name tech={techFlag}>JavaScript</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.bootstrap} ${styles.icon}`}>
+            <Name tech={techFlag}>Bootstrap</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.scss} ${styles.icon}`}>
+            <Name tech={techFlag}>Sass</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.jquery} ${styles.icon}`}>
+            <Name tech={techFlag}>jQuery</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.github} ${styles.icon}`}>
+            <Name tech={techFlag}>GitHub</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.node} ${styles.icon}`}>
+            <Name tech={techFlag}>Node</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.express} ${styles.icon}`}>
+            <Name tech={techFlag}>Express</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.mongodb} ${styles.icon}`}>
+            <Name tech={techFlag}>MongoDB</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.react} ${styles.icon}`}>
+            <Name tech={techFlag}>React</Name>
+            {pointList}
+          </Bgc>
         </main>
-        {/* </div> */}
       </Main>
     </>
   )
