@@ -42,8 +42,8 @@ export default function Technologies({ langFlag }) {
             <Name tech={techFlag}>JavaScript</Name>
             {pointList}
           </Bgc>
-          <Bgc tech={techFlag} className={`${styles.bootstrap} ${styles.icon}`}>
-            <Name tech={techFlag}>Bootstrap</Name>
+          <Bgc tech={techFlag} className={`${styles.github} ${styles.icon}`}>
+            <Name tech={techFlag}>GitHub</Name>
             {pointList}
           </Bgc>
           <Bgc tech={techFlag} className={`${styles.scss} ${styles.icon}`}>
@@ -54,24 +54,24 @@ export default function Technologies({ langFlag }) {
             <Name tech={techFlag}>jQuery</Name>
             {pointList}
           </Bgc>
-          <Bgc tech={techFlag} className={`${styles.github} ${styles.icon}`}>
-            <Name tech={techFlag}>GitHub</Name>
+          <Bgc tech={techFlag} className={`${styles.gsap} ${styles.icon}`}>
+            <Name tech={techFlag}>GSAP</Name>
             {pointList}
           </Bgc>
           <Bgc tech={techFlag} className={`${styles.node} ${styles.icon}`}>
             <Name tech={techFlag}>Node</Name>
             {pointList}
           </Bgc>
-          <Bgc tech={techFlag} className={`${styles.express} ${styles.icon}`}>
-            <Name tech={techFlag}>Express</Name>
-            {pointList}
-          </Bgc>
-          <Bgc tech={techFlag} className={`${styles.mongodb} ${styles.icon}`}>
-            <Name tech={techFlag}>MongoDB</Name>
-            {pointList}
-          </Bgc>
           <Bgc tech={techFlag} className={`${styles.react} ${styles.icon}`}>
             <Name tech={techFlag}>React</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.next} ${styles.icon}`}>
+            <Name tech={techFlag}>Next</Name>
+            {pointList}
+          </Bgc>
+          <Bgc tech={techFlag} className={`${styles.styled} ${styles.icon}`}>
+            <Name tech={techFlag}>Styled components</Name>
             {pointList}
           </Bgc>
         </main>

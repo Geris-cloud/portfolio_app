@@ -107,32 +107,6 @@ main.bilboard {
     }
   }
 
-  div.bootstrap {
-    background-image: url(../public/images/technologies/btsttrap.png);
-
-    div:nth-last-of-type(4),
-    div:nth-last-of-type(5) {
-      background-color: b.$rb;
-    }
-  }
-
-  div.scss {
-    background-image: url(../public/images/technologies/sass.png);
-
-    div:nth-last-of-type(5) {
-      background-color: b.$rb;
-    }
-  }
-
-  div.jquery {
-    background-image: url(../public/images/technologies/jquery.png);
-
-    div:nth-last-of-type(4),
-    div:nth-last-of-type(5) {
-      background-color: b.$rb;
-    }
-  }
-
   div.github {
     background-image: url(../public/images/technologies/git.png);
 
@@ -143,20 +117,63 @@ main.bilboard {
     }
   }
 
+  div.scss {
+    background-image: url(../public/images/technologies/sass.png);
+
+    div:nth-last-of-type(4),
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
+  }
+
+  div.jquery {
+    background-image: url(../public/images/technologies/jquery.png);
+
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
+  }
+
+  div.gsap {
+    background-image: url(../public/images/technologies/gsap.png);
+
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
+  }
+
   div.node {
     background-image: url(../public/images/technologies/node.png);
-  }
 
-  div.express {
-    background-image: url(../public/images/technologies/express.png);
-  }
-
-  div.mongodb {
-    background-image: url(../public/images/technologies/mongodb.png);
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
   }
 
   div.react {
     background-image: url(../public/images/technologies/react.png);
+
+    div:nth-last-of-type(4),
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
+  }
+
+  div.next {
+    background-image: url(../public/images/technologies/next.svg);
+
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
+  }
+
+  div.styled {
+    background-image: url(../public/images/technologies/styled-components.png);
+
+    div:nth-last-of-type(4),
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
   }
 }
 
