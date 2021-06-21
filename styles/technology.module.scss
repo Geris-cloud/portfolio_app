@@ -2,6 +2,7 @@
 
 .background {
   position: relative;
+  min-height: 100vh;
 }
 
 p.instruction {
@@ -191,11 +192,8 @@ main.bilboard {
 }
 
 @media (max-width: 830px) {
-  div.wrap {
+  .background {
     min-height: 127vh;
-    margin-left: 0;
-    padding-top: 4vh;
-    transition: 0.2s linear;
   }
 
   p.instruction {
@@ -270,11 +268,8 @@ main.bilboard {
 }
 
 @media (max-width: 830px) and (orientation: landscape) {
-  div.wrap {
+  .background {
     min-height: 230vh;
-    margin-left: 0;
-    padding-top: 4vh;
-    transition: 0.2s linear;
   }
 
   p.instruction {
