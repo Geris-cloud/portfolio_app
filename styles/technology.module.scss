@@ -107,7 +107,7 @@ main.bilboard {
     }
   }
 
-  div.github {
+  div.git {
     background-image: url(../public/images/technologies/git.png);
 
     div:nth-last-of-type(3),
@@ -117,10 +117,26 @@ main.bilboard {
     }
   }
 
-  div.scss {
-    background-image: url(../public/images/technologies/sass.png);
+  div.react {
+    background-image: url(../public/images/technologies/react.png);
 
     div:nth-last-of-type(4),
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
+  }
+
+  div.node {
+    background-image: url(../public/images/technologies/node.png);
+
+    div:nth-last-of-type(5) {
+      background-color: b.$rb;
+    }
+  }
+
+  div.next {
+    background-image: url(../public/images/technologies/next.svg);
+
     div:nth-last-of-type(5) {
       background-color: b.$rb;
     }
@@ -142,16 +158,8 @@ main.bilboard {
     }
   }
 
-  div.node {
-    background-image: url(../public/images/technologies/node.png);
-
-    div:nth-last-of-type(5) {
-      background-color: b.$rb;
-    }
-  }
-
-  div.react {
-    background-image: url(../public/images/technologies/react.png);
+  div.styled {
+    background-image: url(../public/images/technologies/styled-components.png);
 
     div:nth-last-of-type(4),
     div:nth-last-of-type(5) {
@@ -159,16 +167,8 @@ main.bilboard {
     }
   }
 
-  div.next {
-    background-image: url(../public/images/technologies/next.svg);
-
-    div:nth-last-of-type(5) {
-      background-color: b.$rb;
-    }
-  }
-
-  div.styled {
-    background-image: url(../public/images/technologies/styled-components.png);
+  div.scss {
+    background-image: url(../public/images/technologies/sass.png);
 
     div:nth-last-of-type(4),
     div:nth-last-of-type(5) {
